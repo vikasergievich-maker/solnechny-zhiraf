@@ -5,6 +5,16 @@
  --text-leading:1.6; --heading-leading:1.2;
 }
 body { font-size:var(--type-body); line-height:var(--text-leading); }
+.october-schedule { margin-block:32px; padding:24px; background:#fff8ec; border:1px solid #ead8bf; border-radius:24px; }
+.october-schedule>p { font-size:14px; line-height:1.6; margin-block:12px 20px; color:var(--ink-2); }
+.october-schedule details { padding-block:14px; border-top:1px solid #ead8bf; }
+.october-schedule summary { min-height:32px; cursor:pointer; font-weight:700; }
+.october-schedule ul { padding-left:20px; }
+.october-schedule li { font-size:16px; line-height:1.6; margin-top:12px; }
+.direction-schedule { font-size:14px; line-height:1.6; color:var(--ink-2); margin:0 0 20px; }
+.dir--october .dir__img { height:auto; aspect-ratio:5/6; background:#fff8ec; }
+.dir--october .dir__img img { object-fit:contain; width:100%; height:100%; }
+.october-cover { padding:32px 20px; min-height:180px; background:#fff1d9; font-family:var(--font-display); font-size:22px; }
 .form-section__grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .form-section__grid>*,.form-card,.field,.field--row>* { min-width:0; }
 .field--row { grid-template-columns:repeat(2,minmax(0,1fr)); }
