@@ -1187,6 +1187,7 @@
     @media (max-width: 760px) { .floating-cta { display: flex; } }
 
   </style>
+<link rel="stylesheet" href="mobile-refresh.css">
 </head>
 <body>
 
@@ -1293,21 +1294,20 @@
         </div>
 
         <h1 class="hero__title">
-          Тёплое место,<br>
-          где дети<br>
+          Тёплое место,<br>где дети<br>
           <span class="word--accent">растут с радостью</span>
         </h1>
 
         <p class="hero__lead lead">
-          Детский центр «Солнечный Жираф» для детей от 1 до 8 лет. Занятия, мастер-классы, спектакли и праздники — без давления и спешки.
+          <span class="hero__intro">Детский центр «Солнечный Жираф»<br>для детей от 1 до 8 лет.</span><span class="hero__details">Занятия, мастер-классы, спектакли и праздники — без давления и спешки.</span>
         </p>
 
         <div class="hero__cta">
           <a href="#register" class="btn btn--orange btn--lg">
-            Записаться на пробное
+            Пробное занятие — 500 ₽
             <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="#branches" class="btn btn--ghost btn--lg">Выбрать филиал</a>
+          <a href="#branches" class="btn btn--ghost btn--lg">Выбрать филиал</a><p class="hero__addresses">Пионерстроя, 27 · Ветеранов, 131</p>
         </div>
 
         <div class="hero__stats">
@@ -1555,18 +1555,18 @@
       <p style="max-width:380px;">15 направлений для детей от 1 до 8 лет. Все доступны в обоих филиалах — расписание подскажем при записи.</p>
     </div>
 
-    <div class="dirs fi">
+    <div class="dirs">
 
       <!-- Пробное занятие -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-03-06_20-38-25.jpg" alt="Пробное занятие"></div>
+      <article class="dir dir--sample">
+        <div class="sample-visual"><img src="logo-giraffe.png" alt="" width="100" height="100"><span>Давайте<br>знакомиться!</span></div>
         <div class="dir__body">
           <div class="dir__tags"><span class="dir__tag dir__tag--hot">Старт</span><span class="dir__tag">Знакомство</span></div>
           <div class="dir__title">Пробное занятие</div>
           <p class="dir__desc">Первое знакомство с центром, педагогом и атмосферой. Понять, комфортно ли ребёнку.</p>
           <div class="dir__foot">
             <div class="dir__price">500 ₽<small>разовое</small></div>
-            <a href="#register" class="dir__go" aria-label="Записаться">
+            <a href="#register" class="dir__go" aria-label="Записаться на пробное занятие">Записаться
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             </a>
           </div>
@@ -2408,5 +2408,6 @@
   }
 </script>
 
+<script src="mobile-refresh.js"></script>
 </body>
 </html>
