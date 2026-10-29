@@ -18,3 +18,5 @@
  .branch__btns .btn { padding:11px 14px; min-height:44px; }
  .branch-picker button:focus-visible,.branch__hours summary:focus-visible { outline:2px solid var(--orange-dk); outline-offset:3px; }
 }
+
+@media(min-width:761px) { .hero__branch-label { display:none; } }
