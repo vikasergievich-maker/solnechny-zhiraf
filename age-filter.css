@@ -1,0 +1,8 @@
+.age-picker { margin:0 0 24px; }
+.age-picker__label { display:block; font-size:16px; font-weight:700; margin-bottom:12px; color:var(--ink); }
+.age-picker__buttons { display:flex; flex-wrap:wrap; gap:8px; }
+.age-picker button { min-height:44px; padding:10px 16px; border:1px solid #dfc6a5; border-radius:24px; color:var(--ink-2); background:#fffaf1; font-size:14px; font-weight:600; }
+.age-picker button[aria-pressed=true] { background:var(--orange); border-color:var(--orange); color:white; }
+.age-picker button:focus-visible { outline:2px solid var(--orange-dk); outline-offset:3px; }
+#age-results { font-size:14px; line-height:1.5; margin-top:12px; color:var(--ink-2); }
+#directions .dir[hidden] { display:none; }

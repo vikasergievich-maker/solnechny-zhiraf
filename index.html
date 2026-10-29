@@ -1190,6 +1190,7 @@
 <link rel="stylesheet" href="mobile-refresh.css">
 <link rel="stylesheet" href="typography.css">
 <link rel="stylesheet" href="branches.css">
+<link rel="stylesheet" href="age-filter.css">
 <link rel="preload" as="image" href="logo-giraffe.webp" fetchpriority="high">
 </head>
 <body>
@@ -1553,7 +1554,7 @@
       <p style="max-width:380px;">15 направлений для детей от 1 до 8 лет. Все доступны в обоих филиалах — расписание подскажем при записи.</p>
     </div>
 
-    <div class="dirs">
+    <div class="age-picker"><span class="age-picker__label" id="age-picker-label">Выберите возраст ребёнка</span><div class="age-picker__buttons" role="group" aria-labelledby="age-picker-label"><button type="button" data-age="all" aria-pressed="true">Все</button><button type="button" data-age="1-3" aria-pressed="false">1–3 года</button><button type="button" data-age="3-5" aria-pressed="false">3–5 лет</button><button type="button" data-age="5-7" aria-pressed="false">5–7 лет</button><button type="button" data-age="7-10" aria-pressed="false">7–10 лет</button><button type="button" data-age="school" aria-pressed="false">1–4 класс</button></div><p id="age-results" role="status" aria-live="polite"></p></div><div class="dirs">
 
       <!-- Пробное занятие -->
       <article class="dir dir--sample">
@@ -2409,5 +2410,21 @@
 
 <script src="mobile-refresh.js"></script>
 <script src="branches.js"></script>
+<script src="age-filter.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
