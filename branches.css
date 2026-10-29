@@ -1,0 +1,20 @@
+.hero__trial-price { flex-basis:100%; margin:0; font-size:14px; line-height:1.5; color:var(--ink-2); }
+.branch-picker,.branch-swipe-hint { display:none; }
+.branch__hours summary { cursor:pointer; font-size:14px; font-weight:700; color:var(--ink-2); min-height:32px; }
+.branch__hours[open] summary { margin-bottom:12px; }
+.branch__hours td { overflow-wrap:anywhere; }
+@media(max-width:760px) {
+ .hero__trial-price { text-align:center; margin-top:-3px; }
+ .branch-picker { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px; }
+ .branch-picker button { padding:10px 16px; border:1px solid #dfc6a5; border-radius:24px; font-size:14px; min-height:44px; color:var(--ink-2); }
+ .branch-picker button[aria-pressed=true] { background:var(--orange); border-color:var(--orange); color:white; }
+ .branch-swipe-hint { display:block; font-size:13px; color:var(--ink-3); margin-bottom:16px; }
+ #branches .branches { display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-padding-inline:0; align-items:flex-start; padding:0 24px 16px 0; scrollbar-width:thin; scrollbar-color:#dfc6a5 transparent; }
+ #branches .branch { flex:0 0 88%; min-width:0; padding:24px 20px; border-radius:28px; scroll-snap-align:start; scroll-snap-stop:always; }
+ .branch__addr { font-size:14px; line-height:1.5; }
+ .branch__hours { padding:14px; margin-block:20px; }
+ .branch__hours td { font-size:13px; line-height:1.5; }
+ .branch__btns { gap:8px; }
+ .branch__btns .btn { padding:11px 14px; min-height:44px; }
+ .branch-picker button:focus-visible,.branch__hours summary:focus-visible { outline:2px solid var(--orange-dk); outline-offset:3px; }
+}

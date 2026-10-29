@@ -1189,6 +1189,7 @@
   </style>
 <link rel="stylesheet" href="mobile-refresh.css">
 <link rel="stylesheet" href="typography.css">
+<link rel="stylesheet" href="branches.css">
 <link rel="preload" as="image" href="logo-giraffe.webp" fetchpriority="high">
 </head>
 <body>
@@ -1303,10 +1304,10 @@
 
         <div class="hero__cta">
           <a href="#register" class="btn btn--orange btn--lg">
-            Пробное занятие — 600 ₽
+            Записаться на пробное
             <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <p class="hero__branch-label">Выбрать филиал</p><p class="hero__addresses"><a href="#branch-pionerstroya">Пионерстроя, 27</a><span aria-hidden="true"> · </span><a href="#branch-veteranov">Ветеранов, 131</a></p>
+          <p class="hero__trial-price">Первое занятие — 600 ₽</p><p class="hero__branch-label">Выбрать филиал</p><p class="hero__addresses"><a href="#branch-pionerstroya">Пионерстроя, 27</a><span aria-hidden="true"> · </span><a href="#branch-veteranov">Ветеранов, 131</a></p>
         </div>
 
         <div class="hero__stats">
@@ -1385,7 +1386,7 @@
       <p>Оба центра — в Красносельском районе. Одинаковые направления, одна команда. Расписание различается, чтобы вы могли подобрать подходящее время.</p>
     </div>
 
-    <div class="branches fi">
+    <div class="branch-picker" aria-label="Выбор филиала"><button type="button" data-branch="branch-pionerstroya" aria-controls="branch-pionerstroya" aria-pressed="true">Пионерстроя</button><button type="button" data-branch="branch-veteranov" aria-controls="branch-veteranov" aria-pressed="false">Ветеранов</button></div><p class="branch-swipe-hint">Листайте, чтобы посмотреть оба филиала →</p><div class="branches" aria-label="Филиалы центра">
       <article class="branch branch--1" id="branch-pionerstroya">
         <div class="branch__num">Филиал 01</div>
         <h3 class="branch__title">Пионерстроя, 27</h3>
@@ -1395,8 +1396,7 @@
         </div>
         <p class="branch__desc">Развивающие занятия, малышники, мастер-классы, дни рождения и другие направления для детей в уютной атмосфере.</p>
 
-        <div class="branch__hours">
-          <h4>Режим работы</h4>
+        <details class="branch__hours"><summary>Режим работы</summary>
           <table>
             <tr><td>Понедельник</td><td>15:00–20:00</td></tr>
             <tr><td>Вторник</td><td>10:00–20:00 <small style="color:var(--ink-3);">(обед 13:00–15:00)</small></td></tr>
@@ -1406,7 +1406,7 @@
             <tr><td>Суббота</td><td>10:00–15:00</td></tr>
             <tr class="sun"><td>Воскресенье</td><td>Праздники, мероприятия, мастер-классы</td></tr>
           </table>
-        </div>
+        </details>
 
         <div class="branch__btns">
           <a href="#register" class="btn btn--primary btn--sm">Записаться</a>
@@ -1423,8 +1423,7 @@
         </div>
         <p class="branch__desc">Занятия для детей разных возрастов, внимательные педагоги и удобный формат записи на пробное занятие.</p>
 
-        <div class="branch__hours">
-          <h4>Режим работы</h4>
+        <details class="branch__hours"><summary>Режим работы</summary>
           <table>
             <tr><td>Понедельник</td><td>10:00–20:00</td></tr>
             <tr><td>Вторник</td><td>15:00–20:00</td></tr>
@@ -1434,7 +1433,7 @@
             <tr><td>Суббота</td><td>10:00–13:00</td></tr>
             <tr class="sun"><td>Воскресенье</td><td>Мероприятия, мастер-классы</td></tr>
           </table>
-        </div>
+        </details>
 
         <div class="branch__btns">
           <a href="#register" class="btn btn--primary btn--sm">Записаться</a>
@@ -2337,7 +2336,7 @@
 
 <!-- ===================== FLOATING CTA ===================== -->
 <a href="#register" class="floating-cta">
-  <span>Пробное за 600 ₽</span>
+  <span>Пробное занятие · 600 ₽</span>
   <span class="btn btn--orange">Записаться</span>
 </a>
 
@@ -2409,5 +2408,6 @@
 </script>
 
 <script src="mobile-refresh.js"></script>
+<script src="branches.js"></script>
 </body>
 </html>
