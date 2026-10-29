@@ -105,3 +105,9 @@ body { font-size:var(--type-body); line-height:var(--text-leading); }
 .direction-details summary { cursor:pointer; font-size:14px; font-weight:700; min-height:44px; display:list-item; padding-block:10px; }
 .direction-details p { margin-top:12px; }
 .dance-package { display:block; margin-top:10px; }
+
+/* Keep the labelled trial button level on hover. */
+.dir--sample:hover .dir__go { transform:none; }
+.dir--sample .dir__go svg { transition:transform .2s ease; }
+@media(hover:hover) { .dir--sample .dir__go:hover svg { transform:translateX(2px); } }
+@media(prefers-reduced-motion:reduce) { .dir--sample .dir__go svg { transition:none; } }
