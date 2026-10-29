@@ -5,6 +5,23 @@
  --text-leading:1.6; --heading-leading:1.2;
 }
 body { font-size:var(--type-body); line-height:var(--text-leading); }
+.form-section__grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.form-section__grid>*,.form-card,.field,.field--row>* { min-width:0; }
+.field--row { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.form-card input,.form-card select,.form-card textarea { min-width:0; max-width:100%; }
+.form-section h2,.form-section p,.form-section__features li { overflow-wrap:break-word; }
+.form-card .btn { white-space:normal; }
+@media(max-width:760px) {
+ .form-section { padding:28px 18px; border-radius:28px; }
+ .form-section__grid { grid-template-columns:minmax(0,1fr); gap:28px; }
+ .form-card { width:100%; padding:22px 18px; border-radius:24px; }
+ .form-section__features li { align-items:flex-start; font-size:16px; line-height:1.6; }
+ .form-section__features svg { margin-top:5px; }
+ .form-section .form-card p { color:var(--ink-2); }
+ .form-section .form-card .consent { font-size:13px; }
+ .field--row { grid-template-columns:minmax(0,1fr); gap:14px; }
+ .field input,.field select,.field textarea { padding:13px 12px; }
+}
 .legal-page { font-family:'Manrope',system-ui,sans-serif; color:#50382c; background:#fffaf3; }
 .legal-page h1,.legal-page h2 { font-family:'Unbounded','Manrope',sans-serif; }
 .legal-page .hero-pp h1 { font-size:var(--type-h1); line-height:1.25; }
