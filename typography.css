@@ -1,0 +1,59 @@
+/* Shared type scale: mobile first, desktop headings grow at 761px. */
+:root {
+ --type-body:16px; --type-small:14px; --type-label:13px;
+ --type-h1:26px; --type-h2:24px; --type-h3:18px;
+ --text-leading:1.6; --heading-leading:1.2;
+}
+body { font-size:var(--type-body); line-height:var(--text-leading); }
+.legal-page { font-family:'Manrope',system-ui,sans-serif; color:#50382c; background:#fffaf3; }
+.legal-page h1,.legal-page h2 { font-family:'Unbounded','Manrope',sans-serif; }
+.legal-page .hero-pp h1 { font-size:var(--type-h1); line-height:1.25; }
+.legal-page .content h2 { font-size:var(--type-h3); line-height:1.35; color:#50382c; }
+.legal-page .content p,.legal-page .content li { font-size:var(--type-body); line-height:var(--text-leading); color:#695044; }
+.legal-page .hero-pp p { font-size:var(--type-small); line-height:1.5; }
+.hero h1 { font-size:var(--type-h1); line-height:var(--heading-leading); letter-spacing:-.025em; }
+.section h2,.teachers h2 { font-size:var(--type-h2)!important; line-height:var(--heading-leading); letter-spacing:-.025em; }
+.section h3,.dir__title,.branch__title,.contact__addr,.scheme__step h3 {
+ font-size:var(--type-h3)!important; line-height:1.3; letter-spacing:-.015em;
+}
+.hero__lead,.hero__intro,.hero__details,.shead p,.lead,
+.branch__desc,.why__card p,.help__text,.dir__desc,.scheme__step p,
+.feat__content p,.feat__list,.teachers p,.rev__text,
+.form-section p,.form-card>p,.form-success p,.contacts__cta p,.seo-text,
+.footer__desc { font-size:var(--type-body); line-height:var(--text-leading); }
+.hero__lead { max-width:540px; }
+.hero__intro { font-weight:600; }
+.shead h2 { margin-top:12px; }
+.shead p { margin-top:16px; }
+.shead { margin-bottom:32px; }
+.branch__desc,.dir__desc,.why__card p { margin-top:12px; }
+.branch__loc,.contact__city,.branch__hours td,.contact__hours td,
+.hero__branch-label,.hero__cta .hero__addresses,.hero__addresses a,
+.rev__name,.footer__col a,.footer__col p { font-size:var(--type-small); line-height:1.5; }
+.eyebrow,.dir__tag,.rev__src,.rev__sub,.branch__hours h4,.field label,
+.consent,.form-card .consent,.footer__bottom { font-size:var(--type-label); line-height:1.5; }
+.btn,.btn--lg,.hero__cta .btn--orange,.hero__cta .btn--ghost,
+.field input,.field select,.field textarea { font-size:var(--type-body); }
+.btn--sm,.floating-cta,.floating-cta .btn,.dir--sample .dir__go { font-size:var(--type-small); }
+.dir__price { font-size:20px; line-height:1.3; }
+.dir__price small,.ptable td:last-child small { font-size:12px; line-height:1.5; }
+.ptable td { font-size:var(--type-small); line-height:1.5; }
+.section { padding-block:64px; }
+.section--tight { padding-block:48px; }
+@media(max-width:600px) {
+ .hero__lead { max-width:330px; }
+ .hero__title { margin-bottom:18px; }
+ .hero__intro { margin-bottom:12px; }
+ .hero__addresses a { padding:10px 12px; }
+ .hero__chip { font-size:12px; min-height:40px; padding:7px 9px; }
+ .hero__visual { width:200px; }
+ .hero__chip--1,.hero__chip--2,.hero__chip--3,.hero__chip--4 { left:-60%; }
+ .dirs { grid-template-columns:1fr; }
+ .dir--sample .dir__title { font-size:var(--type-h3); }
+}
+@media(min-width:761px) {
+ :root { --type-h1:clamp(36px,4.2vw,52px); --type-h2:clamp(30px,3.6vw,44px); --type-h3:22px; }
+ .section { padding-block:100px; }
+ .section--tight { padding-block:72px; }
+ .shead { margin-bottom:40px; }
+}
