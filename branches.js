@@ -11,6 +11,17 @@ function selectBranch(id, navigate = false) {
   }
 }
 branchButtons.forEach(button => button.addEventListener('click', () => selectBranch(button.dataset.branch, true)));
+branchCards.forEach(card => {
+  let start;
+  card.addEventListener('pointerdown', event => {
+    start = {x:event.clientX, y:event.clientY};
+  }, {passive:true});
+  card.addEventListener('click', event => {
+    if (!branchMobile.matches || event.target.closest('a,button,summary,input,select,textarea')) return;
+    if (start && (Math.abs(event.clientX-start.x)>10 || Math.abs(event.clientY-start.y)>10)) return;
+    selectBranch(card.id, true);
+  });
+});
 let scrollFrame;
 branchRail.addEventListener('scroll', () => {
   cancelAnimationFrame(scrollFrame);
