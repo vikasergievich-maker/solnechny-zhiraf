@@ -1213,7 +1213,6 @@
       <ul class="nav__menu">
         <li><a href="#branches">Адреса</a></li>
         <li><a href="#directions">Направления</a></li>
-        <li><a href="#prices">Цены</a></li>
         <li><a href="#events">События</a></li>
         <li><a href="#reviews">Отзывы</a></li>
         <li><a href="#contacts">Контакты</a></li>
@@ -1260,7 +1259,6 @@
       <li><a href="#branches">Адреса и расписание</a></li>
       <li><a href="#why">Почему мы</a></li>
       <li><a href="#directions">Направления</a></li>
-      <li><a href="#prices">Цены</a></li>
       <li><a href="#events">Спектакли и события</a></li>
       <li><a href="#birthday">День рождения</a></li>
       <li><a href="#reviews">Отзывы</a></li>
@@ -1353,7 +1351,6 @@
   </div>
 </section>
 
-<!-- ===================== TICKER ===================== -->
 <section class="ticker" aria-hidden="true">
   <div class="ticker__track">
     <div class="ticker__item">Развитие речи</div>
@@ -1378,7 +1375,127 @@
   </div>
 </section>
 
-<!-- ===================== BRANCHES ===================== -->
+<section class="section" id="directions" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="shead shead--end fi">
+      <div>
+        <div class="eyebrow">Направления</div>
+        <h2>Занятия по возрасту</h2>
+      </div>
+      <p style="max-width:380px;">Выберите занятия по возрасту ребёнка. Расписание зависит от филиала.</p>
+    </div>
+
+    <div class="age-picker"><span class="age-picker__label" id="age-picker-label">Выберите возраст ребёнка</span><div class="age-picker__buttons" role="group" aria-labelledby="age-picker-label"><button type="button" data-age="all" aria-pressed="true">Все</button><button type="button" data-age="1-3" aria-pressed="false">1–3 года</button><button type="button" data-age="3-5" aria-pressed="false">3–5 лет</button><button type="button" data-age="5-7" aria-pressed="false">5–7 лет</button><button type="button" data-age="7-10" aria-pressed="false">7–10 лет</button><button type="button" data-age="school" aria-pressed="false">1–4 класс</button></div><p id="age-results" role="status" aria-live="polite"></p></div><div class="dirs">
+
+      <!-- Пробное занятие -->
+      <article class="dir dir--sample">
+        <div class="sample-visual"><img src="logo-giraffe.webp" alt="" width="100" height="100" loading="lazy" decoding="async"><span>Давайте<br>знакомиться!</span></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag dir__tag--hot">Старт</span></div>
+          <div class="dir__title">Пробное занятие</div><div class="course-price">600 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Первое знакомство с центром, педагогом и атмосферой. Понять, комфортно ли ребёнку.</p><div class="course-details__price">600 ₽<small>разовое</small></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Мама Жирафа -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-01.webp" alt="Мама Жирафа" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">1–3 года</span></div>
+          <div class="dir__title">Мама Жирафа</div><div class="course-price">3 600 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Комплексные занятия раннего развития под контролем дефектолога, с особым вниманием к запуску и развитию речи. Игры, движение, сенсорика, творчество и общение.</p><p class="direction-schedule">1–3 года · 40 минут · пр. Ветеранов, 131.<br>Педагог — Горская Ксения Сергеевна, специалист по раннему развитию и запуску речи с опытом более 8 лет.<br>Актуальное время группы уточняйте при записи.</p><details class="direction-details"><summary>Как проходят занятия</summary><p>На каждом занятии — логоритмика, двигательные и сенсорные игры, речевые упражнения, творчество и музыка. Развиваем внимание, мышление, крупную и мелкую моторику, знакомимся с окружающим миром и учимся взаимодействовать с другими детьми.</p><p>Подходит малышам, которым нужны речевая практика, комплексное развитие и общение со сверстниками. Педагог учитывает возраст и особенности ребёнка, а родители получают рекомендации специалиста и поддержку в вопросах речи и развития.</p></details><div class="course-details__price">3 600 ₽<small>4 занятия по 40 минут</small><span class="dance-package">5 900 ₽<small>8 занятий по 40 минут</small></span></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- МалышАРТ -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-02.webp" alt="МалышАРТ 1-3 года" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">1–3 года</span></div>
+          <div class="dir__title">МалышАРТ</div><div class="course-price">3 600 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Творческие занятия для самых маленьких: рисование, лепка, сенсорные игры.</p><div class="course-details__price">3 600 ₽</div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Тип-Топ -->
+      
+
+      <!-- Чудесенка -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-03.webp" alt="Чудесенка" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">2,5–4 года</span></div>
+          <div class="dir__title">Мастер-классы «Чудесенка»</div><div class="course-price">4 000 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Творческие занятия для малышей: рисование, лепка, аппликация, поделки.</p><div class="course-details__price">4 000 ₽</div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Мармеладки -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-04.webp" alt="Танцы Мармеладки" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">2,5–7 лет</span></div>
+          <div class="dir__title">Танцы «Мармеладки»</div><div class="course-price">3 550 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Развиваем координацию, чувство ритма, гибкость и уверенность через музыку, игру и танцевальные постановки.</p><p class="direction-schedule">Пионерстроя, 27 · 40 минут.<br>Актуальное время группы уточняйте при записи.</p><details class="direction-details"><summary>Как проходят занятия</summary><p>Разминка, игровые упражнения, растяжка, упражнения для осанки, прыжки, импровизация и постановка танцевальных номеров. Занимаемся в поддерживающей и дружелюбной атмосфере.</p><p>Подходит детям, которые любят движение и музыку, хотят развить координацию, общаться и выступать. Коллектив регулярно участвует в конкурсах и занимает призовые места.</p></details><div class="course-details__price">3 550 ₽<small>4 занятия</small><span class="dance-package">5 500 ₽<small>8 занятий</small></span></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Шедеврики -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-05.webp" alt="Шедеврики" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">3–8 лет</span></div>
+          <div class="dir__title">Студия «Шедеврики»</div><div class="course-price">3 600 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Студия живописи и лепки: гуашь, акрил, пластилин — каждый малыш художник.</p><div class="course-details__price">3 600 ₽</div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Крафт -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-06.webp" alt="Крафт-студия" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">4–9 лет</span></div>
+          <div class="dir__title">Крафт-студия</div><div class="course-price">3 600 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Объёмные поделки, игрушки и работы из самых разных материалов.</p><div class="course-details__price">3 600 ₽</div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Песочные легенды -->
+      
+
+      <!-- Предшкола -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-07.webp" alt="Предшкола 5-7 лет" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">5–7 лет</span></div>
+          <div class="dir__title">Предшкола</div><div class="course-price">3 600 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Чтение, счёт, письмо, внимание, память, моторика — без давления.</p><div class="course-details__price">3 600 ₽</div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Экспресс -->
+      
+
+      <!-- Логопед -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-08.webp" alt="Логопед" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">от 2,5 лет</span></div>
+          <div class="dir__title">Логопед</div><div class="course-price">1 800 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Диагностика, развитие речи, работа со звуками и произношением.</p><div class="course-details__price">1 800 ₽<small>занятие</small></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Запуск речи -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-09.webp" alt="Запуск речи" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">от 1,5 лет</span></div>
+          <div class="dir__title">Запуск и развитие речи</div><div class="course-price">1 800 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Для детей с задержкой речи. Запуск понимания и активной коммуникации.</p><div class="course-details__price">1 800 ₽<small>занятие</small></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Дефектолог -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-10.webp" alt="Дефектолог 2,5-10 лет" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">2,5–10 лет</span></div>
+          <div class="dir__title">Дефектолог</div><div class="course-price">1 800 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Для детей с особенностями развития. Внимание, мышление, речь, коммуникация и базовые навыки.</p><div class="course-details__price">1 800 ₽<small>занятие</small></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+      <!-- Репетитор -->
+      <article class="dir">
+        <div class="dir__img"><img src="course-illustration-11.webp" alt="Репетитор начальных классов" width="1254" height="1254" loading="lazy" decoding="async"></div>
+        <div class="dir__body">
+          <div class="dir__tags"><span class="dir__tag">1–4 класс</span></div>
+          <div class="dir__title">Репетитор начальных классов</div><div class="course-price">1 800 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Математика, русский язык, чтение, помощь с учебными трудностями.</p><div class="course-details__price">1 800 ₽<small>занятие</small></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+<article class="dir dir--october"><div class="dir__img"><img src="course-illustration-12.webp" alt="Музыкальный театр" width="1254" height="1254" loading="lazy" decoding="async"></div><div class="dir__body"><div class="dir__tags"><span class="dir__tag">3–7 лет</span></div><div class="dir__title">Музыкальный театр</div><div class="course-price">2 000 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Логоритмика для детей 3–4 лет и «Музыкальный теремок» для 4–7 лет: музыка, движение, речь и сценки.</p><p class="direction-schedule">Пионерстроя, 27 · 50 минут.<br>Акция: 4 занятия — 2 000 ₽.<br>Актуальное расписание уточняйте при записи.</p><div class="course-details__price">2 000 ₽<small>4 занятия по 50 минут · акция</small></div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+<article class="dir dir--october"><div class="dir__img"><img src="course-illustration-13.webp" alt="Нейрочтение" width="1254" height="1254" loading="lazy" decoding="async"></div><div class="dir__body"><div class="dir__tags"><span class="dir__tag">5–7 лет</span></div><div class="dir__title">Нейрочтение</div><div class="course-price">4 000 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Для детей 5–7 лет, которым сложно даётся чтение или нужна подготовка к школе. Учимся следить за строкой, понимать прочитанное и работать с текстом, развиваем внимание, память и самоконтроль.</p><p class="direction-schedule">Пионерстроя, 27 · один раз в неделю, 50 минут.<br>Педагог — дефектолог-нейропедагог Горская Ксения Сергеевна.<br>Актуальное время уточняйте при записи.</p><div class="course-details__price">4 000 ₽</div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+<article class="dir dir--october"><div class="dir__img"><img src="course-illustration-14.webp" alt="Комплексное развитие" width="1254" height="1254" loading="lazy" decoding="async"></div><div class="dir__body"><div class="dir__tags"><span class="dir__tag">3–5 лет</span></div><div class="dir__title">Комплексное развитие</div><div class="course-price">3 600 ₽</div><details class="course-details"><summary><span class="course-more">Подробнее</span><span class="course-less">Свернуть</span></summary><div class="course-details__content"><p class="dir__desc">Речь, подготовка к чтению, счёт, моторика, внимание, память и творчество в игровой форме.</p><p class="direction-schedule">Группы 3–4 и 4–5 лет в двух филиалах.<br>Актуальное расписание уточняйте при записи.</p><div class="course-details__price">3 600 ₽</div><a class="btn btn--orange btn--sm" href="#register">Записаться</a></div></details></div></article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="why"><div class="wrap">
+<div class="shead"><div class="eyebrow">О центре</div><h2>Растём, играем и учимся вместе</h2><p>«Солнечный Жираф» — детский центр в Красносельском районе Санкт-Петербурга. Уделяем внимание каждому, с любовью к детям.</p></div>
+<div class="about-compact">
+<article><h3>Тёплая атмосфера</h3><p>Помогаем освоиться в новом пространстве, общаться и находить друзей.</p></article>
+<article><h3>Внимательные педагоги</h3><p>Учитываем возраст и особенности ребёнка, поддерживаем интерес к занятиям.</p></article>
+<article><h3>Развитие через игру</h3><p>Развиваем речь, внимание, память и мышление. Готовимся к школе и раскрываем творческие способности.</p></article>
+<article><h3>Группы по возрасту</h3><p>Помогаем подобрать подходящее направление и удобный филиал.</p></article>
+</div></div></section>
+
 <section class="section" id="branches">
   <div class="wrap">
     <div class="shead fi">
@@ -1445,480 +1562,14 @@
   </div>
 </section>
 
-<!-- ===================== WHY US (BENTO) ===================== -->
-<section class="section" id="why">
-  <div class="wrap">
-    <div class="shead shead--end fi">
-      <div>
-        <div class="eyebrow">Почему мы</div>
-        <h2>Место, в которое дети возвращаются с улыбкой</h2>
-      </div>
-      <p style="max-width:380px;">Семь принципов, на которых построена работа «Солнечного Жирафа». Без громких слов — только то, что чувствует ребёнок.</p>
-    </div>
+<section class="section section--tight" id="teachers"><div class="wrap"><div class="shead"><div class="eyebrow">Команда центра</div><h2>Наша команда</h2><p>Вместе мы помогаем детям расти, развиваться и быть счастливыми!</p></div><div class="team-grid" id="team-list"><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-aleksandra-gorskaya.jpg" alt="Горская Александра Сергеевна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Горская Александра Сергеевна</h3><p class="team-card__role">Руководитель центра</p></div></div><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Логопед, учитель начальных классов, психолог, педагог раннего развития.</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-marina-garkusha.jpg" alt="Гаркуша Марина Алексеевна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Гаркуша Марина Алексеевна</h3><p class="team-card__role">Старший администратор центра</p></div></div><details class="direction-details"><summary>Образование и квалификация</summary><p>Среднее профессиональное образование. Повышение квалификации по курсу «Администратор детского центра».</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-kseniya-gorskaya.jpg" alt="Горская Ксения Сергеевна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Горская Ксения Сергеевна</h3><p class="team-card__role">Методист клуба, специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27 · Ветеранов, 131</p><p class="team-card__directions">Группы раннего возраста, подготовка к школе, творчество, индивидуальные коррекционные занятия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Специальный психолог, педагог раннего развития, нейропедагог.</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-marina-raykhman.jpg" alt="Райхман Марина Викторовна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Райхман Марина Викторовна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27</p><p class="team-card__directions">Подготовка к школе, творчество, индивидуальные коррекционные занятия, каллиграфия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Олигофренопедагог, учитель начальных классов.</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-antonina-aleshina.jpg" alt="Алёшина Антонина Николаевна" width="90" height="126" loading="lazy" decoding="async" style="object-position:center 50%"><div><h3>Алёшина Антонина Николаевна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27</p><p class="team-card__directions">Индивидуальные коррекционные занятия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Олигофренопедагог, логопед, учитель начальных классов.</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-lyubov-fedorova.jpg" alt="Фёдорова Любовь Константиновна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Фёдорова Любовь Константиновна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27 · Ветеранов, 131</p><p class="team-card__directions">Группы раннего возраста, подготовка к школе, творчество.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее образование. Профессиональная переподготовка «Педагог дошкольного образования», «Педагог раннего развития».</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-oksana-gorelikova.jpg" alt="Гореликова Оксана Сергеевна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Гореликова Оксана Сергеевна</h3><p class="team-card__role">Руководитель танцевального и музыкального коллектива</p></div></div><p class="team-card__branch">Пионерстроя, 27</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Среднее профессиональное образование. Руководитель хореографического коллектива, музыкальный руководитель, преподаватель.</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-svetlana-stepaneeva.jpg" alt="Степанеева Светлана Георгиевна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Степанеева Светлана Георгиевна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Ветеранов, 131</p><p class="team-card__directions">Подготовка к школе, индивидуальные коррекционные занятия, каллиграфия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Олигофренопедагог, логопед, учитель начальных классов.</p></details></article><article class="team-card"><div class="team-card__head"><img class="team-card__photo" src="team-tatyana-dmitrieva.jpg" alt="Дмитриева Татьяна Михайловна" width="90" height="126" loading="lazy" decoding="async"><div><h3>Дмитриева Татьяна Михайловна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Ветеранов, 131</p><p class="team-card__directions">Группы комплексного развития 3–5 лет, творчество, индивидуальные коррекционные занятия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Дефектолог, специальный психолог, преподаватель детской аэробики.</p></details></article></div><div class="team-cta"><button type="button" class="btn btn--soft team-expand" data-expand="team-list" data-more="Все специалисты" aria-controls="team-list" aria-expanded="false">Все специалисты</button></div></div></section>
 
-    <div class="why fi">
-      <div class="why__card why__card--1">
-        <div class="why__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.5-7 10-7 10"/></svg></div>
-        <div>
-          <h3>Тёплая, домашняя атмосфера</h3>
-          <p>Детям спокойно, уютно и интересно. Никакой спешки и формальности — только живое общение и доброе настроение.</p>
-        </div>
-      </div>
-
-      <div class="why__card why__card--2">
-        <div class="why__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></div>
-        <div>
-          <h3>Педагоги, которые слышат ребёнка</h3>
-          <p>Помогаем включиться в занятие без давления, в своём темпе. Замечаем настроение каждого ребёнка.</p>
-        </div>
-      </div>
-
-      <div class="why__card why__card--3">
-        <div class="why__icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg></div>
-        <div>
-          <h3>Группы по возрасту</h3>
-          <p>Подбираем направление с учётом возраста и особенностей ребёнка.</p>
-        </div>
-      </div>
-
-      <div class="why__card why__card--4">
-        <div class="why__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01M15 9h.01M8 14s1.5 2 4 2 4-2 4-2"/></svg></div>
-        <div>
-          <h3>Развитие через игру</h3>
-          <p>Творчество, движение и общение — без скучных уроков.</p>
-        </div>
-      </div>
-
-      <div class="why__card why__card--5">
-        <div class="why__icon"><svg viewBox="0 0 24 24"><path d="M12 2 15 9l7 .5-5 5 1.5 7-6.5-4-6.5 4L7 14.5l-5-5L9 9z"/></svg></div>
-        <div>
-          <h3>Спектакли и события</h3>
-          <p>Малышники, мастер-классы и праздники — жизнь центра не ограничена занятиями.</p>
-        </div>
-      </div>
-
-      <div class="why__card why__card--7">
-        <div class="why__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
-        <div>
-          <h3>Два адреса в районе</h3>
-          <p>Выбирайте филиал, который удобнее по местоположению и расписанию.</p>
-        </div>
-      </div>
-
-      <div class="why__card why__card--6">
-        <div class="why__icon"><svg viewBox="0 0 24 24"><path d="M20 7 12 15l-4-4"/><path d="M20 12a8 8 0 1 1-3-6.3"/></svg></div>
-        <div>
-          <h3 style="font-size:24px;">Пробное занятие за&nbsp;600&nbsp;₽</h3>
-          <p>Первое занятие — всего за 600 ₽. Приходите познакомиться с педагогом, оценить формат и окунуться в нашу атмосферу. А уже потом вы спокойно решите, готовы ли заниматься на постоянной основе.</p>
-        </div>
-        <a href="#register" class="btn btn--orange btn--sm" style="align-self:flex-start;">
-          Записаться
-          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== HELP LIST ===================== -->
-<section class="section" style="background:var(--paper);">
-  <div class="wrap">
-    <div class="shead shead--center fi">
-      <div class="eyebrow">С чем помогаем</div>
-      <h2>Каждое занятие — шаг ребёнка вперёд</h2>
-    </div>
-
-    <ul class="help fi">
-      <li><div class="help__num">01</div><div class="help__text">Мягко адаптироваться к новым занятиям и пространству</div></li>
-      <li><div class="help__num">02</div><div class="help__text">Общаться с детьми и находить друзей</div></li>
-      <li><div class="help__num">03</div><div class="help__text">Развивать речь и обогащать словарный запас</div></li>
-      <li><div class="help__num">04</div><div class="help__text">Тренировать внимание, память и мышление</div></li>
-      <li><div class="help__num">05</div><div class="help__text">Готовиться к школе без стресса и давления</div></li>
-      <li><div class="help__num">06</div><div class="help__text">Раскрывать творческие способности и таланты</div></li>
-      <li><div class="help__num">07</div><div class="help__text">Пробовать новое в безопасной атмосфере</div></li>
-      <li><div class="help__num">08</div><div class="help__text">Получать радость от общения и игры</div></li>
-      <li><div class="help__num">09</div><div class="help__text">Знакомиться с театром через малышники</div></li>
-      <li><div class="help__num">10</div><div class="help__text">Праздновать важные события в детском пространстве</div></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ===================== DIRECTIONS ===================== -->
-<section class="section" id="directions" style="background:var(--paper);padding-top:0;">
-  <div class="wrap">
-    <div class="shead shead--end fi">
-      <div>
-        <div class="eyebrow">Направления</div>
-        <h2>Занятия, мастер-классы и события</h2>
-      </div>
-      <p style="max-width:380px;">Выберите занятия по возрасту ребёнка. Расписание зависит от филиала.</p>
-    </div>
-
-    <div class="age-picker"><span class="age-picker__label" id="age-picker-label">Выберите возраст ребёнка</span><div class="age-picker__buttons" role="group" aria-labelledby="age-picker-label"><button type="button" data-age="all" aria-pressed="true">Все</button><button type="button" data-age="1-3" aria-pressed="false">1–3 года</button><button type="button" data-age="3-5" aria-pressed="false">3–5 лет</button><button type="button" data-age="5-7" aria-pressed="false">5–7 лет</button><button type="button" data-age="7-10" aria-pressed="false">7–10 лет</button><button type="button" data-age="school" aria-pressed="false">1–4 класс</button></div><p id="age-results" role="status" aria-live="polite"></p></div><div class="dirs">
-
-      <!-- Пробное занятие -->
-      <article class="dir dir--sample">
-        <div class="sample-visual"><img src="logo-giraffe.webp" alt="" width="100" height="100" loading="lazy" decoding="async"><span>Давайте<br>знакомиться!</span></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag dir__tag--hot">Старт</span><span class="dir__tag">Знакомство</span></div>
-          <div class="dir__title">Пробное занятие</div>
-          <p class="dir__desc">Первое знакомство с центром, педагогом и атмосферой. Понять, комфортно ли ребёнку.</p>
-          <div class="dir__foot">
-            <div class="dir__price">600 ₽<small>разовое</small></div>
-            <a href="#register" class="dir__go" aria-label="Записаться на пробное занятие">Записаться
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Мама Жирафа -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-03-15_15-07-07.webp" alt="Мама Жирафа" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">1–3 года</span><span class="dir__tag">С мамой</span></div>
-          <div class="dir__title">Мама Жирафа</div>
-          <p class="dir__desc">Комплексные занятия раннего развития под контролем дефектолога, с особым вниманием к запуску и развитию речи. Игры, движение, сенсорика, творчество и общение.</p><p class="direction-schedule">1–3 года · 40 минут · пр. Ветеранов, 131.<br>Педагог — Горская Ксения Сергеевна, специалист по раннему развитию и запуску речи с опытом более 8 лет.<br>Актуальное время группы уточняйте при записи.</p><details class="direction-details"><summary>Как проходят занятия</summary><p>На каждом занятии — логоритмика, двигательные и сенсорные игры, речевые упражнения, творчество и музыка. Развиваем внимание, мышление, крупную и мелкую моторику, знакомимся с окружающим миром и учимся взаимодействовать с другими детьми.</p><p>Подходит малышам, которым нужны речевая практика, комплексное развитие и общение со сверстниками. Педагог учитывает возраст и особенности ребёнка, а родители получают рекомендации специалиста и поддержку в вопросах речи и развития.</p></details>
-          <div class="dir__foot">
-            <div class="dir__price">3 600 ₽<small>4 занятия по 40 минут</small><span class="dance-package">5 900 ₽<small>8 занятий по 40 минут</small></span></div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- МалышАРТ -->
-      <article class="dir">
-        <div class="dir__img"><img src="banner-malyshart.webp" alt="МалышАРТ 1-3 года" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">1–3 года</span><span class="dir__tag">Творчество</span></div>
-          <div class="dir__title">МалышАРТ</div>
-          <p class="dir__desc">Творческие занятия для самых маленьких: рисование, лепка, сенсорные игры.</p>
-          <div class="dir__foot">
-            <div class="dir__price">3 600 ₽</div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Тип-Топ -->
-      
-
-      <!-- Чудесенка -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-03-25_17-45-02.webp" alt="Чудесенка" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">2,5–4 года</span><span class="dir__tag">Творчество</span></div>
-          <div class="dir__title">Мастер-классы «Чудесенка»</div>
-          <p class="dir__desc">Творческие занятия для малышей: рисование, лепка, аппликация, поделки.</p>
-          <div class="dir__foot">
-            <div class="dir__price">4 000 ₽</div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Мармеладки -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-03-25_16-49-37.webp" alt="Танцы Мармеладки" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">2,5–7 лет</span><span class="dir__tag">Танцы</span></div>
-          <div class="dir__title">Танцы «Мармеладки»</div>
-          <p class="dir__desc">Развиваем координацию, чувство ритма, гибкость и уверенность через музыку, игру и танцевальные постановки.</p><p class="direction-schedule">Пионерстроя, 27 · 40 минут.<br>Актуальное время группы уточняйте при записи.</p><details class="direction-details"><summary>Как проходят занятия</summary><p>Разминка, игровые упражнения, растяжка, упражнения для осанки, прыжки, импровизация и постановка танцевальных номеров. Занимаемся в поддерживающей и дружелюбной атмосфере.</p><p>Подходит детям, которые любят движение и музыку, хотят развить координацию, общаться и выступать. Коллектив регулярно участвует в конкурсах и занимает призовые места.</p></details>
-          <div class="dir__foot">
-            <div class="dir__price">3 550 ₽<small>4 занятия</small><span class="dance-package">5 500 ₽<small>8 занятий</small></span></div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Шедеврики -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-03-23_14-17-03.webp" alt="Шедеврики" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">3–8 лет</span><span class="dir__tag">Живопись</span></div>
-          <div class="dir__title">Студия «Шедеврики»</div>
-          <p class="dir__desc">Студия живописи и лепки: гуашь, акрил, пластилин — каждый малыш художник.</p>
-          <div class="dir__foot">
-            <div class="dir__price">3 600 ₽</div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Крафт -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-03-15_10-43-46.webp" alt="Крафт-студия" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">4–9 лет</span><span class="dir__tag">Творчество</span></div>
-          <div class="dir__title">Крафт-студия</div>
-          <p class="dir__desc">Объёмные поделки, игрушки и работы из самых разных материалов.</p>
-          <div class="dir__foot">
-            <div class="dir__price">3 600 ₽</div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Песочные легенды -->
-      
-
-      <!-- Предшкола -->
-      <article class="dir">
-        <div class="dir__img"><img src="banner-preshkola.webp" alt="Предшкола 5-7 лет" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">5–7 лет</span><span class="dir__tag">К школе</span></div>
-          <div class="dir__title">Предшкола</div>
-          <p class="dir__desc">Чтение, счёт, письмо, внимание, память, моторика — без давления.</p>
-          <div class="dir__foot">
-            <div class="dir__price">3 600 ₽</div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Экспресс -->
-      
-
-      <!-- Логопед -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-04-01_20-45-02.webp" alt="Логопед" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">от 2,5 лет</span><span class="dir__tag">Индивид.</span></div>
-          <div class="dir__title">Логопед</div>
-          <p class="dir__desc">Диагностика, развитие речи, работа со звуками и произношением.</p>
-          <div class="dir__foot">
-            <div class="dir__price">1 800 ₽<small>занятие</small></div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Запуск речи -->
-      <article class="dir">
-        <div class="dir__img"><img src="photo_2026-03-15_13-41-22.webp" alt="Запуск речи" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">от 1,5 лет</span><span class="dir__tag">Индивид.</span></div>
-          <div class="dir__title">Запуск и развитие речи</div>
-          <p class="dir__desc">Для детей с задержкой речи. Запуск понимания и активной коммуникации.</p>
-          <div class="dir__foot">
-            <div class="dir__price">1 800 ₽<small>занятие</small></div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Дефектолог -->
-      <article class="dir">
-        <div class="dir__img"><img src="banner-defectolog.webp" alt="Дефектолог 2,5-10 лет" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">2,5–10 лет</span><span class="dir__tag">Индивид.</span></div>
-          <div class="dir__title">Дефектолог</div>
-          <p class="dir__desc">Для детей с особенностями развития. Внимание, мышление, речь, коммуникация и базовые навыки.</p>
-          <div class="dir__foot">
-            <div class="dir__price">1 800 ₽<small>занятие</small></div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Репетитор -->
-      <article class="dir">
-        <div class="dir__img"><img src="banner-repetitor.webp" alt="Репетитор начальных классов" width="1080" height="1080" loading="lazy" decoding="async"></div>
-        <div class="dir__body">
-          <div class="dir__tags"><span class="dir__tag">1–4 класс</span><span class="dir__tag">Индивид.</span></div>
-          <div class="dir__title">Репетитор начальных классов</div>
-          <p class="dir__desc">Математика, русский язык, чтение, помощь с учебными трудностями.</p>
-          <div class="dir__foot">
-            <div class="dir__price">1 800 ₽<small>занятие</small></div>
-            <a href="#register" class="dir__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </article>
-<article class="dir dir--october"><div class="dir__img"><img src="cover-musical.webp" alt="Музыкальный театр" width="540" height="648" loading="lazy" decoding="async"></div><div class="dir__body"><div class="dir__tags"><span class="dir__tag">3–7 лет</span><span class="dir__tag">Музыка</span></div><div class="dir__title">Музыкальный театр</div><p class="dir__desc">Логоритмика для детей 3–4 лет и «Музыкальный теремок» для 4–7 лет: музыка, движение, речь и сценки.</p><p class="direction-schedule">Пионерстроя, 27 · 50 минут.<br>Акция: 4 занятия — 2 000 ₽.<br>Актуальное расписание уточняйте при записи.</p><div class="dir__foot"><div class="dir__price">2 000 ₽<small>4 занятия по 50 минут · акция</small></div><a class="btn btn--soft btn--sm" href="#register">Записаться</a></div></div></article>
-<article class="dir dir--october"><div class="dir__img"><img src="cover-reading.webp" alt="Нейрочтение" width="540" height="648" loading="lazy" decoding="async"></div><div class="dir__body"><div class="dir__tags"><span class="dir__tag">5–7 лет</span><span class="dir__tag">Чтение</span></div><div class="dir__title">Нейрочтение</div><p class="dir__desc">Для детей 5–7 лет, которым сложно даётся чтение или нужна подготовка к школе. Учимся следить за строкой, понимать прочитанное и работать с текстом, развиваем внимание, память и самоконтроль.</p><p class="direction-schedule">Пионерстроя, 27 · один раз в неделю, 50 минут.<br>Педагог — дефектолог-нейропедагог Горская Ксения Сергеевна.<br>Актуальное время уточняйте при записи.</p><div class="dir__foot"><div class="dir__price">4 000 ₽</div><a class="btn btn--soft btn--sm" href="#register">Записаться</a></div></div></article>
-<article class="dir dir--october"><div class="dir__img"><img src="cover-development.webp" alt="Комплексное развитие" width="540" height="648" loading="lazy" decoding="async"></div><div class="dir__body"><div class="dir__tags"><span class="dir__tag">3–5 лет</span><span class="dir__tag">Развитие</span></div><div class="dir__title">Комплексное развитие</div><p class="dir__desc">Речь, подготовка к чтению, счёт, моторика, внимание, память и творчество в игровой форме.</p><p class="direction-schedule">Группы 3–4 и 4–5 лет в двух филиалах.<br>Актуальное расписание уточняйте при записи.</p><div class="dir__foot"><div class="dir__price">3 600 ₽</div><a class="btn btn--soft btn--sm" href="#register">Записаться</a></div></div></article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===================== SCHEME ===================== -->
-<section class="section" style="background:var(--cream);">
-  <div class="wrap">
-    <div class="shead shead--center fi">
-      <div class="eyebrow">Как попасть к нам</div>
-      <h2>Четыре простых шага</h2>
-    </div>
-
-    <div class="scheme fi">
-      <div class="scheme__step">
-        <div class="scheme__num">01</div>
-        <h3>Напишите нам</h3>
-        <p>В Telegram, по телефону или через форму на сайте. Ответим быстро.</p>
-      </div>
-      <div class="scheme__step">
-        <div class="scheme__num">02</div>
-        <h3>Подберём группу</h3>
-        <p>Расскажем про расписание и подберём направление по возрасту.</p>
-      </div>
-      <div class="scheme__step">
-        <div class="scheme__num">03</div>
-        <h3>Пробное занятие</h3>
-        <p>Приходите на первое за 600 ₽ — познакомьтесь с педагогом.</p>
-      </div>
-      <div class="scheme__step">
-        <div class="scheme__num">04</div>
-        <h3>Начните заниматься</h3>
-        <p>Выберите удобный абонемент и приходите в «Жираф» с удовольствием!</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== EVENTS ===================== -->
-<section class="section" id="events">
-  <div class="wrap">
-    <div class="feat fi">
-      <div class="feat__visual">
-        <img src="banner-events.webp" alt="Спектакли, мастер-классы и малышники в Солнечном Жирафе" width="1254" height="1254" loading="lazy" decoding="async">
-      </div>
-      <div class="feat__content">
-        <div class="eyebrow" style="margin-bottom:18px;">События в центре</div>
-        <h2>Спектакли, малышники и мастер-классы</h2>
-        <p>В «Солнечном Жирафе» жизнь не ограничивается занятиями. Мы проводим особые события, которые дети и родители запоминают надолго.</p>
-        <ul class="feat__list">
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Интерактивные камерные спектакли</li>
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Малышники для самых маленьких — от 1 года</li>
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Творческие мастер-классы</li>
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Тематические мероприятия</li>
-        </ul>
-        <div class="feat__price">
-          <span class="num">от 500 ₽</span>
-          <span class="lbl">за событие</span>
-        </div>
-        <div class="feat__btns">
-          <a href="#register" class="btn btn--orange">Узнать ближайшие события</a>
-          <a href="https://vk.com/sunnygiraffe" target="_blank" rel="noopener" class="btn btn--ghost">Посмотреть в ВК</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== BIRTHDAY ===================== -->
-<section class="section" id="birthday" style="background:var(--paper);">
-  <div class="wrap">
-    <div class="feat feat--reverse fi">
-      <div class="feat__visual">
-        <img src="banner-birthday.webp" alt="День рождения в детском центре Солнечный Жираф" width="1254" height="1254" loading="lazy" decoding="async">
-      </div>
-      <div class="feat__content">
-        <div class="eyebrow" style="margin-bottom:18px;">День рождения</div>
-        <h2>Уютный праздник без хлопот</h2>
-        <p>Организуем душевный день рождения для ребёнка и его гостей — без суеты и без забот для родителей.</p>
-        <ul class="feat__list">
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Праздничная программа с играми и творчеством</li>
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Уютное детское пространство центра</li>
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Внимательные педагоги как ведущие</li>
-          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>Воспоминания, которые остаются надолго</li>
-        </ul>
-        <div class="feat__price">
-          <span class="num">от 17 000 ₽</span>
-          <span class="lbl">за праздник</span>
-        </div>
-        <div class="feat__btns">
-          <a href="#register" class="btn btn--orange">Узнать про день рождения</a>
-          <a href="https://t.me/+79119145070" target="_blank" rel="noopener" class="btn btn--ghost">Написать в Telegram</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== TEACHERS ===================== -->
-<section class="section section--tight" id="teachers"><div class="wrap"><div class="shead"><div class="eyebrow">Команда центра</div><h2>Люди, которые любят своё дело и умеют находить подход к малышам</h2><p>Вместе мы помогаем детям расти, развиваться и быть счастливыми!</p></div><div class="team-grid"><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">ГА</div><div><h3>Горская Александра Сергеевна</h3><p class="team-card__role">Руководитель центра</p></div></div><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Логопед, учитель начальных классов, психолог, педагог раннего развития.</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">ГМ</div><div><h3>Гаркуша Марина Александровна</h3><p class="team-card__role">Старший администратор центра</p></div></div><details class="direction-details"><summary>Образование и квалификация</summary><p>Среднее профессиональное образование. Повышение квалификации по курсу «Администратор детского центра».</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">ГК</div><div><h3>Горская Ксения Сергеевна</h3><p class="team-card__role">Методист клуба, специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27 · Ветеранов, 131</p><p class="team-card__directions">Группы раннего возраста, подготовка к школе, творчество, индивидуальные коррекционные занятия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Специальный психолог, педагог раннего развития, нейропедагог.</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">РМ</div><div><h3>Райхман Марина Викторовна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27</p><p class="team-card__directions">Подготовка к школе, творчество, индивидуальные коррекционные занятия, каллиграфия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Олигофренопедагог, учитель начальных классов.</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">АА</div><div><h3>Алёшина Антонина Николаевна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27</p><p class="team-card__directions">Индивидуальные коррекционные занятия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Олигофренопедагог, логопед, учитель начальных классов.</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">ФЛ</div><div><h3>Фёдорова Любовь Константиновна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Пионерстроя, 27 · Ветеранов, 131</p><p class="team-card__directions">Группы раннего возраста, подготовка к школе, творчество.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее образование. Профессиональная переподготовка «Педагог дошкольного образования», «Педагог раннего развития».</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">ГО</div><div><h3>Гореликова Оксана Сергеевна</h3><p class="team-card__role">Руководитель танцевального и музыкального коллектива</p></div></div><p class="team-card__branch">Пионерстроя, 27</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Среднее профессиональное образование. Руководитель хореографического коллектива, музыкальный руководитель, преподаватель.</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">СС</div><div><h3>Степанеева Светлана Георгиевна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Ветеранов, 131</p><p class="team-card__directions">Подготовка к школе, индивидуальные коррекционные занятия, каллиграфия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Олигофренопедагог, логопед, учитель начальных классов.</p></details></article><article class="team-card"><div class="team-card__head"><div class="team-card__initials" aria-hidden="true">ДТ</div><div><h3>Дмитриева Татьяна Михайловна</h3><p class="team-card__role">Специалист центра</p></div></div><p class="team-card__branch">Ветеранов, 131</p><p class="team-card__directions">Группы комплексного развития 3–5 лет, творчество, индивидуальные коррекционные занятия.</p><details class="direction-details"><summary>Образование и квалификация</summary><p>Высшее специальное (дефектологическое) образование. Дефектолог, специальный психолог, преподаватель детской аэробики.</p></details></article></div><div class="team-cta"><a href="#register" class="btn btn--orange">Познакомиться на пробном занятии</a></div></div></section>
-
-<!-- ===================== PRICES ===================== -->
-<section class="section" id="prices" style="background:var(--paper);">
-  <div class="wrap">
-    <div class="shead fi">
-      <div class="eyebrow">Цены</div>
-      <h2>Расписание и стоимость занятий</h2>
-    </div>
-
-    <div class="pnote fi">
-      Занятия проходят на Пионерстроя, 27 и пр. Ветеранов, 131. Отдельные направления доступны только в одном филиале. Расписание часто меняется — напишите нам, чтобы узнать актуальные группы, время и свободные места.
-    </div>
-
-    
-<div class="ptable-wrap">
-      <table class="ptable">
-        <thead>
-          <tr><th>Направление</th><th>Возраст / формат</th><th>Стоимость</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Пробное занятие</td><td>Первое знакомство</td><td>600 ₽<small>разовое</small></td></tr>
-          <tr><td>Мама Жирафа</td><td>1–3 года · 40 минут · пр. Ветеранов, 131</td><td>3 600 ₽<small>4 занятия</small>5 900 ₽<small>8 занятий</small></td></tr>
-          <tr><td>МалышАРТ</td><td>1–3 года</td><td>3 600 ₽</td></tr>
-          
-          <tr><td>Мастер-классы «Чудесенка»</td><td>2,5–4 года</td><td>4 000 ₽</td></tr>
-          <tr><td>Танцы «Мармеладки»</td><td>2,5–7 лет · 40 минут · Пионерстроя, 27</td><td>3 550 ₽<small>4 занятия</small>5 500 ₽<small>8 занятий</small></td></tr>
-          <tr><td>Студия «Шедеврики»</td><td>3–8 лет</td><td>3 600 ₽</td></tr>
-          <tr><td>Крафт-студия</td><td>4–9 лет</td><td>3 600 ₽</td></tr>
-          
-          <tr><td>Предшкола</td><td>5–7 лет</td><td>3 600 ₽</td></tr>
-          
-          <tr><td>Логопед</td><td>от 2,5 лет, индивид.</td><td>1 800 ₽<small>занятие</small></td></tr>
-          <tr><td>Запуск и развитие речи</td><td>от 1,5 лет, индивидуально</td><td>1 800 ₽<small>занятие</small></td></tr>
-          <tr><td>Дефектолог</td><td>2,5–10 лет, индивид.</td><td>1 800 ₽<small>занятие</small></td></tr>
-          <tr><td>Репетитор начальных классов</td><td>1–4 класс, индивид.</td><td>1 800 ₽<small>занятие</small></td></tr>
-          <tr><td>Спектакли, малышники, мастер-классы</td><td>от 1 года, событие</td><td>500 ₽<small>событие</small></td></tr>
-          <tr><td>День рождения</td><td>праздник в центре</td><td>17 000 ₽<small>праздник</small></td></tr>
-        <tr><td>Музыкальный театр</td><td>3–7 лет</td><td>2 000 ₽<small>4 занятия по 50 минут · акция</small></td></tr><tr><td>Нейрочтение</td><td>5–7 лет</td><td>4 000 ₽</td></tr><tr><td>Комплексное развитие</td><td>3–5 лет</td><td>3 600 ₽</td></tr></tbody>
-      </table>
-    </div>
-
-    <div class="pbtns fi">
-      <a href="https://t.me/+79119145070" target="_blank" rel="noopener" class="btn btn--primary">Узнать расписание в Telegram</a>
-      <a href="#register" class="btn btn--orange">Записаться на пробное</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== GALLERY ===================== -->
-<section class="section" style="background:var(--paper);padding-top:0;">
-  <div class="wrap">
-    <div class="shead shead--center fi">
-      <div class="eyebrow">Атмосфера</div>
-      <h2>Фрагменты жизни в&nbsp;«Солнечном Жирафе»</h2>
-    </div>
-
-    <div class="gal fi">
-      <a class="gal__1" href="photo_2026-03-23_14-17-03.jpg" target="_blank"><img src="photo_2026-03-23_14-17-03.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__2" href="photo_2026-03-15_15-19-56.jpg" target="_blank"><img src="photo_2026-03-15_15-19-56.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__3" href="photo_2026-03-25_16-49-37.jpg" target="_blank"><img src="photo_2026-03-25_16-49-37.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__4" href="photo_2026-03-15_13-18-13.jpg" target="_blank"><img src="photo_2026-03-15_13-18-13.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__5" href="photo_2026-03-15_10-43-46.jpg" target="_blank"><img src="photo_2026-03-15_10-43-46.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__6" href="photo_2026-03-25_17-45-02.jpg" target="_blank"><img src="photo_2026-03-25_17-45-02.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__7" href="photo_2026-03-15_15-07-07.jpg" target="_blank"><img src="photo_2026-03-15_15-07-07.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__8" href="photo_2026-04-01_20-45-02.jpg" target="_blank"><img src="photo_2026-04-01_20-45-02.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-      <a class="gal__9" href="photo_2026-03-23_16-30-25.jpg" target="_blank"><img src="photo_2026-03-23_16-30-25.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
-    </div>
-
-    <div style="text-align:center;margin-top:32px;font-size:14px;color:var(--ink-3);" class="fi">
-      Больше фото и видео — в нашем
-      <a href="https://vk.com/sunnygiraffe" target="_blank" rel="noopener" style="color:var(--orange);font-weight:700;">сообществе ВКонтакте →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== REVIEWS ===================== -->
 <section class="section" id="reviews">
   <div class="wrap">
     <div class="shead shead--end fi">
       <div>
         <div class="eyebrow">Отзывы родителей</div>
-        <h2>Самая важная оценка — от тех, кто приходит каждую неделю</h2>
+        <h2>Что говорят родители</h2>
         <p style="margin-top:10px;color:var(--ink-3);font-size:14px;">★★★★★ 4.9 из 5 · 109 отзывов на Яндекс Картах</p>
       </div>
       <a href="https://yandex.ru/maps/org/solnechny_zhiraf/1102479615/reviews/" target="_blank" rel="noopener" class="btn btn--soft">
@@ -1927,7 +1578,7 @@
       </a>
     </div>
 
-    <div class="revs fi">
+    <div class="revs fi" id="review-list">
       <div class="rev">
         <div class="rev__head">
           <div class="rev__stars">
@@ -2055,9 +1706,41 @@
       </div>
     </div>
   </div>
+<div class="wrap collection-actions"><button type="button" class="btn btn--soft" data-expand="review-list" data-more="Показать ещё отзывы" aria-controls="review-list" aria-expanded="false">Показать ещё отзывы</button></div></section>
+
+<section class="section" id="events"><div class="wrap">
+<div class="shead"><div class="eyebrow">Праздники и события</div><h2>За яркими впечатлениями — к нам</h2></div>
+<div class="celebration-grid">
+<article class="celebration-card"><h3>Спектакли, малышники и мастер-классы</h3><p>Театр, творчество и встречи с друзьями в знакомой атмосфере центра.</p><p>От 500 ₽ · актуальные события уточняйте при записи.</p><a class="btn btn--soft" href="#register">Узнать ближайшие события</a></article>
+<article class="celebration-card" id="birthday"><h3>День рождения в центре</h3><p>Праздничная программа с играми и творчеством, уютное пространство и внимательные педагоги как ведущие.</p><p>От 17 000 ₽ за праздник.</p><a class="btn btn--orange" href="#register">Обсудить праздник</a></article>
+</div></div></section>
+
+<section class="section" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="shead shead--center fi">
+      <div class="eyebrow">Атмосфера</div>
+      <h2>Жизнь центра</h2>
+    </div>
+
+    <div class="gal fi">
+      <a class="gal__1" href="photo_2026-03-23_14-17-03.jpg" target="_blank"><img src="photo_2026-03-23_14-17-03.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__2" href="photo_2026-03-15_15-19-56.jpg" target="_blank"><img src="photo_2026-03-15_15-19-56.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__3" href="photo_2026-03-25_16-49-37.jpg" target="_blank"><img src="photo_2026-03-25_16-49-37.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__4" href="photo_2026-03-15_13-18-13.jpg" target="_blank"><img src="photo_2026-03-15_13-18-13.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__5" href="photo_2026-03-15_10-43-46.jpg" target="_blank"><img src="photo_2026-03-15_10-43-46.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__6" href="photo_2026-03-25_17-45-02.jpg" target="_blank"><img src="photo_2026-03-25_17-45-02.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__7" href="photo_2026-03-15_15-07-07.jpg" target="_blank"><img src="photo_2026-03-15_15-07-07.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__8" href="photo_2026-04-01_20-45-02.jpg" target="_blank"><img src="photo_2026-04-01_20-45-02.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+      <a class="gal__9" href="photo_2026-03-23_16-30-25.jpg" target="_blank"><img src="photo_2026-03-23_16-30-25.webp" alt="" width="1080" height="1080" loading="lazy" decoding="async"></a>
+    </div>
+
+    <div style="text-align:center;margin-top:32px;font-size:14px;color:var(--ink-3);" class="fi">
+      Больше фото и видео — в нашем
+      <a href="https://vk.com/sunnygiraffe" target="_blank" rel="noopener" style="color:var(--orange);font-weight:700;">сообществе ВКонтакте →</a>
+    </div>
+  </div>
 </section>
 
-<!-- ===================== REGISTRATION FORM ===================== -->
 <section class="section" id="register">
   <div class="wrap">
     <div class="form-section fi">
@@ -2137,7 +1820,6 @@
   </div>
 </section>
 
-<!-- ===================== CONTACTS ===================== -->
 <section class="section" id="contacts">
   <div class="wrap">
     <div class="shead shead--center fi">
@@ -2208,20 +1890,7 @@
   </div>
 </section>
 
-<!-- ===================== SEO TEXT ===================== -->
-<section class="section section--tight" style="background:var(--paper);">
-  <div class="wrap">
-    <div class="seo-text">
-      <h3>Детский центр в Красносельском районе Санкт-Петербурга</h3>
-      <p>«Солнечный Жираф» — это детский развивающий центр для малышей от 1 до 8 лет, расположенный в Красносельском районе Санкт-Петербурга. У нас работают два филиала по адресам: ул. Пионерстроя, 27 и пр. Ветеранов, 131. Направления и расписание зависят от филиала — поможем выбрать подходящую группу.</p>
-      <p>Мы знаем, как важно, чтобы ребёнок чувствовал себя комфортно с первых минут в новом пространстве. Поэтому в центре создана тёплая, домашняя атмосфера: уютные холлы, дружелюбные педагоги, продуманные пространства для занятий и игры. У нас можно прийти на пробное занятие за 600 ₽ и в спокойной обстановке решить, подходит ли формат вашему малышу.</p>
-      <p>В «Солнечном Жирафе» работают направления для разных возрастов: занятия формата «мама и малыш» для самых маленьких, рисование, лепка и творческие мастер-классы, музыкальные и танцевальные занятия, подготовка к школе, индивидуальные занятия с логопедом и дефектологом, репетитор для начальных классов. По выходным проходят детские спектакли, малышники и тематические события.</p>
-      <p>Для дошкольников 5–7 лет работают группы предшколы и нейрочтения — развитие чтения, внимания, памяти и подготовка к школе. А для школьников 1–4 класса есть индивидуальный репетитор по математике и русскому языку.</p>
-      <p>Мы также организуем детские дни рождения в Красносельском районе — праздник с программой, играми, творческой частью и душевной атмосферой, который запомнится и ребёнку, и его гостям. Программа дня рождения проходит в уютном пространстве центра под руководством наших педагогов.</p>
-      <p>Запишитесь на пробное занятие в любое удобное время — мы расскажем про актуальное расписание, подберём группу по возрасту и подскажем, какой филиал ближе к вам. Звоните +7 911 914-50-70 или пишите в Telegram, ВКонтакте или MAX.</p>
-    </div>
-  </div>
-</section>
+
 
 <!-- ===================== FOOTER ===================== -->
 <footer class="footer">
@@ -2254,7 +1923,6 @@
         <h4>Разделы</h4>
         <a href="#branches">Адреса</a>
         <a href="#directions">Направления</a>
-        <a href="#prices">Цены</a>
         <a href="#events">События</a>
         <a href="#birthday">День рождения</a>
         <a href="#reviews">Отзывы</a>
@@ -2361,28 +2029,6 @@
 <script src="mobile-refresh.js"></script>
 <script src="branches.js"></script>
 <script src="age-filter.js"></script>
+<script src="compact-sections.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

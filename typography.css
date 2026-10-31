@@ -111,3 +111,47 @@ body { font-size:var(--type-body); line-height:var(--text-leading); }
 .dir--sample .dir__go svg { transition:transform .2s ease; }
 @media(hover:hover) { .dir--sample .dir__go:hover svg { transform:translateX(2px); } }
 @media(prefers-reduced-motion:reduce) { .dir--sample .dir__go svg { transition:none; } }
+
+/* Recomposition: square illustrations without poster panels or cropping. */
+#directions .dir__img { aspect-ratio:1; height:auto; }
+#directions .dir__img img { object-fit:contain; }
+#directions .dir:hover .dir__img img { transform:none; }
+/* Portrait layout approved by client. */
+.team-card__photo { width:90px; height:126px; flex:0 0 90px; object-fit:cover; object-position:center 30%; border-radius:16px; }
+.team-card__head:has(.team-card__photo) { align-items:center; gap:14px; }
+.team-card__head:has(.team-card__photo) h3 { font-size:15px; line-height:1.4; }
+.team-card__head:has(.team-card__photo) .team-card__role { font-size:13px; }
+
+/* Compact course overview with native, keyboard-accessible disclosure. */
+#directions .dir { justify-content:flex-start; }
+#directions .dir__body { flex:1; display:flex; flex-direction:column; min-width:0; }
+#directions .dir__img { height:200px; aspect-ratio:auto; background:var(--cream); }
+#directions .dir__img img { width:100%; height:100%; object-fit:contain; }
+#directions .dir__title { margin-bottom:12px; }
+#directions .course-price { font-size:22px; font-weight:800; margin-bottom:12px; }
+#directions .course-details { margin-top:auto; }
+#directions .course-details>summary { cursor:pointer; min-height:44px; padding:10px 0; color:var(--orange,#ff7a16); font-weight:700; }
+#directions .course-less { display:none; }
+#directions .course-details[open] .course-more { display:none; }
+#directions .course-details[open] .course-less { display:inline; }
+#directions .course-details__content { padding-top:12px; border-top:1px solid #eadfce; }
+#directions .course-details__price { font-size:22px; font-weight:800; margin:18px 0; }
+#directions .course-details__price small { display:block; font-size:13px; font-weight:500; }
+#directions .course-details__content .btn { margin-top:4px; }
+@media(max-width:760px) { #directions .dir__img { height:180px; } #directions .dir__body { padding:20px; } #directions .sample-visual { min-height:0; height:140px; } }
+
+/* Shorter page: combined sections and progressively disclosed collections. */
+.about-compact,.celebration-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.about-compact article,.celebration-card { min-width:0; padding:24px; border-radius:24px; background:var(--cream); }
+.about-compact h3,.celebration-card h3 { margin:0 0 12px; font-size:var(--type-h3); }
+.about-compact p,.celebration-card p { font-size:16px; line-height:1.6; margin:0 0 16px; }
+.celebration-card .btn { white-space:normal; text-align:center; }
+.collection-actions { text-align:center; margin-top:24px; }
+.team-expand { display:none; }
+.revs.collection-collapsed>.rev:nth-child(n+4) { display:none; }
+@media(max-width:760px) {
+ .about-compact,.celebration-grid { grid-template-columns:minmax(0,1fr); gap:14px; }
+ .about-compact article,.celebration-card { padding:20px; }
+ .team-grid.collection-collapsed>.team-card:nth-child(n+4) { display:none; }
+ .team-expand { display:inline-flex; }
+}
